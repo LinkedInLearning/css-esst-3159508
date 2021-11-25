@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ausklappbare Inhalte mit details und summary – Videokurs Webtechniken lernen Teil 2: CSS-Grundlagen</title>
+    
+    <style>
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.5; 
+            max-width: 72ch; 
+            padding: 0 1rem; 
+            margin: auto; 
+        }
+
+        /* details ist das umgebende Element */ 
+        details {
+            background-color: whitesmoke;    
+            border: 1px solid lightgrey; 
+            padding: 1rem; 
+            margin-bottom: 1rem;
+        }    
+
+       /* summary ist der sichtbare Text */
+        summary {
+            font-weight: bold; 
+            font-size: 1.25rem; 
+            cursor: pointer; 
+            transition: all 0.2s ease; 
+        }
+
+        /* Aufzählungszeichen = Plus-Zeichen +  */
+        summary::marker {
+            content: "\002b\00a0"; 
+        }              
+        
+        /* Wenn geöffnet, zeige ein x */
+        details[open] summary::marker {
+            content: "\00d7\00a0"; 
+        }
+        
+    </style>
+    
+
+  </head>
+
+  <body>
+    
+    <h1>Akkordeon mit einer Hintergrundfarbe</h1>
+
+	<details>
+
+		<summary>HTML</summary>
+
+		<p>Die <em>HyperText Markup Language</em> ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente.</p>
+
+	</details>
+
+	<details>	
+
+		<summary>CSS</summary> 
+
+		<p>Die <em>Cascading Style Sheets</em> sind eine Sprache zur Gestaltung von HTML.</p>
+
+	</details>
+
+	<details>
+
+		<summary>JS</summary>
+
+		<p><em>JavaScript</em> ist eine Skriptsprache, um die Möglichkeiten von HTML und CSS zu erweitern.</p>
+
+	</details>
+
+  </body>
+
+</html>

@@ -1,0 +1,283 @@
+/*  ================================ 
+    Webtechniken lernen 2: CSS-Grundlagen 
+    Stylesheet für die Übungswebsite 
+    
+    Abschnitte im Stylesheet: 
+    1. Basiseinstellungen 
+    2. Layoutbereiche gestalten   
+    3. Navigation (und Footer)  
+    4. Inhalte gestalten  
+    5. Formulare gestalten  
+*/
+
+
+
+/**
+  * 1. Basiseinstellungen 
+  */ 
+
+/* Border-Box-Modell aktivieren */
+*, 
+*::before, 
+*::after { 
+    box-sizing: border-box; 
+} 
+
+html {
+    scroll-behavior: smooth;
+    background-color: #eee;
+}
+
+body {
+    min-width: 320px;
+    max-width: 600px; 
+    background-color: white;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, 
+                 "Helvetica Neue", Arial, sans-serif; 
+    font-size: 1rem; 
+    margin: 1rem auto; 
+}
+
+/* Schriftgrößen für die Überschriften, etwas größer als im Browser-Stylesheet */
+h1 { font-size: 2.5rem; font-weight: 500;}
+h2 { font-size: 2rem; font-weight: 500;}
+h3 { font-size: 1.75rem; font-weight: 500;}
+h4 { font-size: 1.5rem; font-weight: 500;} 
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Collapsing margins vermeiden */
+h1, h2, h3, h4, h5, h6, 
+p, ul, ol {
+    margin-top: 0; 
+}
+
+/* Einrückung von figure und blockquote entfernen */
+figure, blockquote {
+    margin: 0; 
+}
+
+/* Boxen am Bildschirm ausblenden */
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0) !important; 
+    overflow: hidden !important;
+
+    width: 1px !important; 
+    white-space: nowrap !important;
+    height: 1px !important; 
+
+    padding: 0 !important; 
+    border: 0 !important; 
+    margin: -1px !important; 
+}
+
+
+
+/** 
+  * 2. Layoutbereiche gestalten  
+  */ 
+.site-header { 
+    padding: 1rem 1rem 0 1rem;
+}
+/* Abstand zwischen Logo und Slogan */
+.site-header h1 {
+    margin-bottom: 0; 
+}
+.site-header p {
+    margin-top: 0; 
+}
+
+.site-content { 
+    line-height: 1.5; 
+    padding: 0 1rem; 
+    margin-bottom: 3rem; 
+}
+
+
+/** 
+  * 3. Navigation (und Footer)  
+  */
+.site-nav, 
+.site-footer {
+    background-color: #333;
+    color: white; 
+    padding: 0.5rem 1rem; 
+    margin: 1rem 0; 
+}
+.site-nav { margin-bottom: 2rem; }
+.site-nav ul {
+    padding: 0; 
+    margin: 0; 
+}
+.site-nav li {
+    display: inline; 
+    margin-right: 0.5rem; 
+}
+.site-nav a,
+.site-footer a {
+    color: white; 
+    text-decoration: none;
+}
+.site-nav a:hover, 
+.site-nav a:focus, 
+.site-footer a:hover, 
+.site-footer a:focus {
+    border-bottom: 1px solid white; 
+}
+/* Aktuellen Menüpunkt hervorheben */
+.site-nav a.current {
+    /* text-decoration: underline; */
+    border-bottom: 1px solid white; 
+}
+
+/* Link "Nach oben" rechts ausrichten */
+.site-footer {
+    font-size: smaller;
+    text-align: right;
+}
+
+
+
+/**
+  * 4. Inhalte gestalten 
+  */ 
+
+/* Links für den Inhaltsbereich gestalten */
+.site-content a:link { color: #07b; }  
+.site-content a:visited { color: #70b; }
+
+.site-content a:hover, 
+.site-content a:focus { 
+    color: #f63;        
+}
+
+.site-content a:active { color: #ec3; } 
+
+/* Externe Links kennzeichnen */
+.site-content a[href^="https"]::after {
+  content: " \29c9"; 
+}
+  
+/* Startseite - Abschnitt mit Infoboxen */
+.infoboxen {
+    background-color: whitesmoke;
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+}
+.infobox {
+    text-align: center;
+    background-color: white;
+    padding: 1rem; 
+    margin: 1rem; 
+}
+
+/* Startseite - Zitate von Kunden */
+.kundenstimme {
+    background-color: whitesmoke;
+    padding: 1rem; 
+    border-left: 5px solid #07b; 
+    margin-bottom: 1rem; 
+}
+
+
+/* Seite News - grundlegende Gestaltung */
+.beitragsliste h3, 
+.linklisten h3 {
+    padding-top: 0.5rem;
+    border-top: 1px solid whitesmoke;
+    margin-bottom: 0.25rem;
+  }
+.beitragsliste article, 
+.linklisten section { 
+    margin-bottom: 3rem; 
+} 
+.beitragsinfo { color: dimgrey; }
+
+
+/* Seite Über uns - Liste der Mitglieder */
+.mitglieder {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+.mitglied {
+    background-color: whitesmoke;
+    padding: 0.5rem; 
+    margin-bottom: 1rem; 
+  }
+
+  
+
+/** 
+  * 5. Formulare gestalten (
+  * Seite Kontakt - Kontaktdaten und Kontaktformular 
+  */ 
+
+/* Abschnitt Kontaktdaten */
+.kontaktdaten {
+    background: whitesmoke;
+    padding: 1rem;
+    border-radius: 0.25rem; 
+    margin-bottom: 2rem;
+}
+
+.kontaktdaten address {
+    font-style: normal;
+}
+
+/* Kontaktformular */ 
+.kontaktformular label { 
+    display: block; 
+    cursor: pointer;
+}
+.kontaktformular  div { 
+    margin-bottom: 1rem; 
+}
+/* Eingabefelder gestalten */ 
+.kontaktformular input[type="text"], 
+.kontaktformular input[type="email"], 
+.kontaktformular textarea {
+    font-size: inherit;
+    font-family: inherit;
+    color: #07b; 
+
+    width: 16rem;
+    padding: 0.5rem;
+    
+    border: 1px solid dimgrey;
+    border-radius: 0.25rem;
+}
+.kontaktformular input[type="text"]:focus, 
+.kontaktformular input[type="email"]:focus, 
+.kontaktformular textarea:focus {
+    background-color: whitesmoke;
+}
+
+/* Textarea - Breite begrenzen */ 
+.kontaktformular textarea {
+    max-width: 25rem; 
+    min-height: 8rem;
+}
+.kontaktformular button {
+    font-size: inherit; 
+    font-family: inherit; 
+    text-align: center;
+
+    background: #07b;
+    color: white; 
+
+    min-width: 16rem; 
+    padding: 1rem;
+    border: none; 
+    border-radius: 0.25rem;
+    
+    cursor: pointer;
+}
+.kontaktformular button:hover, 
+.kontaktformular button:focus {
+    background: #f63;
+}
+
+
+/* eof */ 

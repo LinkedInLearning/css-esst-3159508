@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Die Pseudoklasse :last-child – Videokurs Webtechniken lernen 2: CSS-Grundlagen</title>
+    
+    <style>
+  
+      body { 
+          max-width: 600px; 
+          line-height: 1.5; 
+          font-family: sans-serif;
+          padding: 2rem; 
+          margin: 0 auto; 
+        }
+        
+        nav { 
+          background-color: #eee;
+          padding: 0.5rem; 
+          margin-top: 2rem; 
+        }
+
+        nav > ul { 
+          padding: 0; 
+          margin: 0; 
+        }
+        nav li { 
+          display: inline;
+          padding-right: 0.5rem;
+          padding-left: 0.5rem; 
+        } 
+        nav a {
+          text-decoration: none;
+          color: #333; 
+        }
+
+        /* Ersten Menüpunkt hervorheben */
+        /* nav li:first-child a { color: red; } */
+        
+        /* Letzten Menüpunkt hervorheben */
+        /* nav li:last-child a { color: red; }  */
+
+        /* Bestimmtes Kindelement hervorheben */
+        /* nav li:nth-child(2) { color: red; }  */
+        /* nav li:nth-child(3) { color: red; }  */
+    
+    </style>
+    
+
+  </head>
+
+  <body>
+
+    <h1>Pseudoklassen für Kindelemente</h1>
+    
+    <nav>
+      <ul>
+        <li><a href="#">Startseite</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Über uns</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+
+  </body>
+
+</html>

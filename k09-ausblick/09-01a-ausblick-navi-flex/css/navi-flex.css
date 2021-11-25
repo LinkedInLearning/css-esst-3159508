@@ -1,0 +1,77 @@
+/*  ================================ 
+    Webtechniken lernen 2: CSS-Grundlagen 
+    Stylesheet für die Übungswebsite 
+
+    navi-flex.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet für die Gestaltung der Site-Navigation
+    basiert auf Flexbox 
+    1. <nav> Farben und Abstände 
+    2. <ul>  display:flex und ohne Aufzählungszeichen 
+    3. <li>  flex:1 und senkrechte Trennlinien
+    4. <a>   display:block und Gestaltung 
+
+*/
+
+
+
+/** 
+  * Navigationsbereich  
+  */
+
+.site-nav { 
+  background: #333; 
+  color: white; 
+  
+  padding: 0 1rem; 
+  margin: 1rem 0; 
+}
+
+
+/** 
+  * Navigationsliste  
+  */
+
+.site-nav ul {
+  /* display: flex;    */
+  /* list-style: none;  */
+
+  padding: 0; 
+  margin: 0; 
+}
+/* .site-nav li {
+  flex: 1; 
+  border-left: 1px solid white; 
+}
+.site-nav li:last-child {
+  border-right: 1px solid white;
+} */
+
+
+/** 
+  * Navigationslinks   
+  */
+
+.site-nav a {
+  /* display: block; */
+  /* text-align: center;  */
+  text-decoration: none;
+  color: white; 
+
+  /* padding: 0.5rem 0.25rem;  */
+}
+
+/* .site-nav a:hover, 
+.site-nav a:focus {
+  background-color: #07b;
+  color: white; 
+}
+.site-nav a.current {
+  background-color: #07b;
+  color: white; 
+} */
+
+
+
+/* eof */

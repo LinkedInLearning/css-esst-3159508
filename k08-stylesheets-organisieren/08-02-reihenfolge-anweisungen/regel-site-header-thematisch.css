@@ -1,0 +1,13 @@
+.site-header {
+    display: block; 
+
+    font-family: sans-serif; 
+    font-size: 1.25rem; 
+
+    background: white; 
+    color: black; 
+
+    padding-top: 1rem; 
+    border-top: 1px solid dimgrey; 
+    margin-bottom: 1rem; 
+}

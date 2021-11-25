@@ -1,0 +1,117 @@
+/*  ================================ 
+    Webtechniken lernen 2: CSS-Grundlagen 
+    Stylesheet für die Übungswebsite 
+
+    inhalte.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet für die Gestaltung der Inhalte in <main> 
+    - Hyperlinks im Inhaltsbereich 
+    - Infoboxen 
+    - Feedback (Kundenstimmen)  
+    - Beiträge und Linklisten ("News") 
+    - Team (Mitgliederliste, "Über uns") 
+
+*/
+
+/**
+  * Hyperlinks im Inhaltsbereich 
+  */ 
+
+.site-content a:link { color: #07b; }  
+.site-content a:visited { color: #70b; }
+
+.site-content a:hover, 
+.site-content a:focus { 
+    color: #f63;        
+}
+
+.site-content a:active { color: #ec3; } 
+
+/* Externe Links kennzeichnen */
+.site-content a[href^="https"]::after {
+  content: " \29c9"; 
+}
+  
+
+
+/**
+  * Infoboxen (momentan nur Startseite) 
+  */
+.infoboxen {
+    background-color: whitesmoke;
+    color: black; 
+
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+}
+.infobox {
+    text-align: center;
+    background-color: white;
+    color: black; 
+
+    padding: 1rem; 
+    margin: 1rem; 
+}
+
+
+
+/**
+  * Feedback (Kundenstimmen) 
+  */
+.kundenstimme {
+    background-color: whitesmoke;
+    color: black; 
+
+    padding: 1rem; 
+    border-left: 5px solid #07b; 
+    margin-bottom: 1rem; 
+}
+
+
+
+/** 
+  * Beiträge und Linklisten ("News")
+  */
+.beitragsliste h3, 
+.linklisten h3 {
+    padding-top: 0.5rem;
+    border-top: 1px solid whitesmoke;
+    margin-bottom: 0.25rem;
+}
+
+/* Abstände nach unten für die Abschnitte */
+.beitragsliste article, 
+.linklisten section { 
+    margin-bottom: 3rem; 
+} 
+
+/* Metadaten für die Artikel (Autor, Datum etc. */
+.beitragsinfo { color: dimgrey; }
+
+
+
+/** 
+  * Team - Liste der Mitglieder ("Über uns")
+  */
+
+/* Liste ohne Marker, padding und margin */
+.mitglieder {
+    list-style-type: none;
+
+    padding: 0; 
+    margin: 0; 
+}
+
+/* Gestaltung der Listenelemente */
+.mitglied {
+    background-color: whitesmoke;
+    color: black; 
+
+    padding: 0.5rem; 
+    margin-bottom: 1rem; 
+  }
+
+
+
+/* eof */

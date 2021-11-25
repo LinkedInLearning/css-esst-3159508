@@ -1,0 +1,69 @@
+/*  ================================ 
+    Webtechniken lernen 2: CSS-Grundlagen 
+    Stylesheet für die Übungswebsite 
+
+    navi-inline.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet für die Gestaltung der Site-Navigation
+    basiert auf display:inline 
+
+*/
+
+/** 
+  * Navigationsbereich  
+  */
+
+.site-nav {
+    background-color: #333;
+    color: white; 
+    padding: 0.5rem 1rem; 
+    margin: 1rem 0 2rem 0; 
+}
+
+
+
+/** 
+  * Navigationsliste  
+  */
+
+/* Liste ohne Marker, padding und margin */
+.site-nav ul {
+    /* Marker explizit deaktivieren, bei display: inline für <li> nicht zwingend nötig */
+    list-style-type: none; 
+
+    padding: 0; 
+    margin: 0; 
+}
+
+/* Listenelemente nebeneinander und etwas Abstand nach rechts */
+.site-nav li {
+    display: inline; 
+    margin-right: 0.5rem; 
+}
+
+
+
+/** 
+  * Navigationslinks   
+  */
+
+/* Grundlegende Gestaltung */
+.site-nav a {
+    color: white; 
+    text-decoration: none;
+}
+.site-nav a:hover, 
+.site-nav a:focus {
+    /* border-bottom ist flexibler als text-decoration: underline */    
+    border-bottom: 1px solid white; 
+}
+
+/* Aktuellen Menüpunkt hervorheben */
+.site-nav a.current {
+    border-bottom: 1px solid white; 
+}
+
+
+
+/* eof */

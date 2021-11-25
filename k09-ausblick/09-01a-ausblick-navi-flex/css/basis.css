@@ -1,0 +1,95 @@
+/*  ================================ 
+    Webtechniken lernen 2: CSS-Grundlagen 
+    Stylesheet für die Übungswebsite 
+
+    basis.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet zur grundlegenden Gestaltung 
+    1. Globale Einstellungen 
+    2. Allgemeine, nützliche Klassen 
+
+*/
+
+
+/**
+  * 1. Globale Gestaltung  
+  */ 
+
+/* Border-Box-Modell aktivieren */
+*, 
+*::before, 
+*::after { 
+    box-sizing: border-box; 
+} 
+
+html {
+    /* Interne Links sollen sanft gleiten */
+    scroll-behavior: smooth;
+
+    /* Hintergrundfarbe für den Viewport */
+    background-color: #eee;
+}
+
+body {
+    /* Systemschriftart auf dem Gerät des Benutzers; »Best Practice« kann sich ändern */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, 
+                 "Helvetica Neue", Arial, sans-serif; 
+    
+    /* Definition der Standardschriftgröße (optional, ist ja der Standardwert) */
+    font-size: 1rem; 
+    
+    /* Vorübergehende Begrenzung der Breite (solange die Seiten nicht responsiv sind) */
+    min-width: 320px;
+    max-width: 600px; 
+
+    /* Hintergrundfarbe für die eigentliche Webseite */
+    background-color: white;
+
+    /* Zentrierung von body im Viewport, der obere Abstand ist optional */
+    margin: 1rem auto; 
+}
+
+/* Schrift etwas größer als im Browser-Stylesheet; font-weight etwas weniger (statt 700) */
+h1 { font-size: 2.5rem; font-weight: 500;}
+h2 { font-size: 2rem; font-weight: 500;}
+h3 { font-size: 1.75rem; font-weight: 500;}
+h4 { font-size: 1.5rem; font-weight: 500;} 
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Collapsing margins vermeiden */
+h1, h2, h3, h4, h5, h6, 
+p, ul, ol {
+    margin-top: 0; 
+}
+
+/* Einrückung von figure und blockquote entfernen */
+figure, blockquote {
+    margin: 0; 
+}
+
+
+
+/**
+  * 2. Allgemeine, nützliche Klassen  
+  */ 
+
+/* Boxen am Bildschirm ausblenden, »Best Practice« kann sich ändern */
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0) !important; 
+    overflow: hidden !important;
+
+    width: 1px !important; 
+    white-space: nowrap !important;
+    height: 1px !important; 
+
+    padding: 0 !important; 
+    border: 0 !important; 
+    margin: -1px !important; 
+}
+
+
+
+/* eof */

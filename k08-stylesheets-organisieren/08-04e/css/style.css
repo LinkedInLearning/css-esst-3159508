@@ -1,0 +1,17 @@
+/*  ================================ 
+    Webtechniken lernen 2: CSS-Grundlagen 
+    Stylesheet für die Übungswebsite 
+
+    style.css ist ein zentrales Stylesheet 
+    wird im <head> mit <link> eingebunden 
+
+*/
+
+@import url("basis.css");
+@import url("layoutbereiche.css"); 
+@import url("navi-inline.css");
+@import url("inhalte.css");
+@import url("formulare.css"); 
+
+
+/* eof */

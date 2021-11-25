@@ -1,0 +1,94 @@
+/*  ================================ 
+    Webtechniken lernen 2: CSS-Grundlagen 
+    Stylesheet für die Übungswebsite 
+
+    navi-flex.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet für die Gestaltung der Site-Navigation
+    basiert auf Flexbox 
+    1. <nav> Farben und Abstände 
+    2. <ul>  display:flex und ohne Aufzählungszeichen 
+       <li>  flex:1 und senkrechte Trennlinien 
+    3. <a>   display:block und Gestaltung 
+
+*/
+
+
+
+/** 
+  * 1. Navigationsbereich  
+  */
+
+.site-nav { 
+  background: #333; 
+  color: white; 
+  
+  padding: 0 1rem; 
+  margin: 1rem 0; 
+}
+
+
+
+/** 
+  * 2. Navigationsliste  
+  */
+
+.site-nav ul {
+  /* Flexbox aktivieren */
+  display: flex;   
+  
+  /* Aufzählungszeichen deaktivieren */
+  list-style: none; 
+
+  padding: 0; 
+  margin: 0; 
+}
+
+.site-nav li {
+  /* Listenelemente bitte alle gleich breit */
+  flex: 1; 
+
+  /* Listenelemente bitte links mit Rahmenlinie, ... */
+  border-left: 1px solid white; 
+}
+/* ... und das letzte auch rechts */
+.site-nav li:last-child {
+  border-right: 1px solid white;
+}
+
+
+
+/** 
+  * 3. Navigationslinks   
+  */
+
+.site-nav a {
+  /* Links werden als Blockbox so breit wie es geht */
+  display: block;
+  
+  /* Text in der Blockbox zentrieren */
+  text-align: center; 
+  text-decoration: none;
+  color: white; 
+
+  /* Die Links und somit die Klickfläche vergrößern */
+  padding: 0.5rem 0.25rem; 
+}
+
+/* Aktuellen Link und diverse Zustände einfärben  */
+.site-nav a:hover, 
+.site-nav a:focus {
+  background-color: #07b;
+  color: white; 
+}
+.site-nav a.current {
+  background-color: #07b;
+  color: white; 
+} 
+.site-nav a:active {
+  background-color: #3ad;
+  color: white; 
+}
+
+/* eof */

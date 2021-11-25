@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Links als Buttons - Videokurs Webtechniken lernen 2: CSS-Grundlagen</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+
+      * { box-sizing: border-box; }
+
+      body {
+        font-family: sans-serif;        
+        line-height: 1.5; 
+        text-align: center; 
+        background: #fbf9f3; 
+        max-width: 600px; 
+        padding: 2rem; 
+        margin: 1rem auto; 
+      }
+
+      h1, h2 { 
+        margin-top: 0; 
+        margin-bottom: 0.5rem; 
+      }
+      h1 { display: none; }
+      
+      h2 { 
+        font-family: 'Tangerine', serif; 
+        font-size: 3rem;
+        font-weight: 500;
+        color: dimgrey; 
+        text-shadow: 2px 4px 4px rgba(0,0,0,0.2);
+        letter-spacing: 4px; 
+      }
+
+      .angebot {
+        background: #f5efe0; 
+        padding: 1rem; 
+      }  
+
+      figure {
+        margin: 0; 
+      }
+      
+      figure img {
+        max-width: 100%;
+      }
+            
+      /* Basisgestaltung für beide Buttons */
+      .button-primary, 
+      .button-secondary {
+        display: inline-block;
+        background: #07b; 
+        color: white; 
+        /* Optional: Mindestbreite = gleich breit */
+        min-width: 10rem; 
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem; 
+        /* Optional: etwas weniger hoch */
+        /* padding: 0.5rem 1rem;  */
+        border: 2px solid #07b;         
+        margin-top: 1rem;
+      }
+      
+      /* Primärer Button */
+      .button-primary {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-right: 2rem;
+      }
+      /* Sekundärer Button */
+      .button-secondary {
+        background: transparent; 
+        color: #07b; 
+      }
+
+      /* Interaktion gestalten */
+      .button-primary:hover, 
+      .button-primary:focus {
+        background: darkred; 
+        border: 2px solid darkred; 
+      }
+      .button-secondary:hover, 
+      .button-secondary:focus {
+        background: #07b;
+        color: white;         
+      }      
+
+  </style>
+    
+
+  </head>
+
+  <body>
+    
+    <h1>Links als Buttons</h1>
+    
+    <section class="angebot">
+
+      <h2>Ab auf die Insel</h2>
+
+      <figure>
+        <img src="bilder/strand.jpg" 
+             width="512" 
+             height="384" 
+             alt="Strand auf Schiermonnikoog">
+
+        <figcaption>
+
+          <a href="#" class="button-primary">Jetzt buchen</a><a href="#" class="button-secondary">Mehr Infos</a>
+
+        </figcaption>
+      </figure>
+
+    </section>      
+  </body>
+
+</html>

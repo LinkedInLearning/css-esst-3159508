@@ -1,0 +1,117 @@
+/*  ================================ 
+    Webtechniken lernen 2: CSS-Grundlagen 
+    Stylesheet für die Übungswebsite 
+
+    formulare.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet für Interaktionen mit dem Benutzer 
+    - Kontakdaten 
+    - Kontaktformular 
+
+*/
+
+/** 
+  * Kontaktdaten 
+  */ 
+
+/* Abschnitt gestalten */
+.kontaktdaten {
+    background: whitesmoke;
+    color: black; 
+
+    padding: 1rem;
+    border-radius: 0.25rem; 
+    margin-bottom: 2rem;
+}
+
+/* Adresse nicht kursiv  */
+.kontaktdaten address { font-style: normal; }
+
+
+
+/** 
+  * Kontaktformular 
+  */ 
+
+/* Beschriftung der Formularfelder */
+.kontaktformular label { 
+    /* als Block = auf einer eigenen Zeile */
+    display: block; 
+
+    /* Mauszeiger als "Klickhand", wie bei einem Hyperlink */
+    cursor: pointer;
+}
+
+/* Abstände zwischen den Zeilen im Formular */
+.kontaktformular  div { 
+    margin-bottom: 1rem; 
+}
+
+/* Eingabefelder gestalten */ 
+.kontaktformular input[type="text"], 
+.kontaktformular input[type="email"], 
+.kontaktformular textarea {
+    /* Vererbung von Schriftart und -größe erzwingen */
+    font-size: inherit;
+    font-family: inherit;
+
+    /* Optional: Benutzereingaben in einer anderen Farbe darstellen */
+    /* color: #07b;  */
+
+    /* Alle Eingabefelder gleich breit  */
+    width: 16rem;
+
+    /* etwas Platz zwischen Benutzereingabe und Rahmenlinie  */
+    padding: 0.5rem;
+    
+    /* Rahmenlinien der Eingabefelder */
+    border: 1px solid dimgrey;
+    border-radius: 0.25rem;
+}
+
+/* Eingabefelder mit Hintergrundfarbe, wenn sie ausgefüllt werden */
+.kontaktformular input[type="text"]:focus, 
+.kontaktformular input[type="email"]:focus, 
+.kontaktformular textarea:focus {
+    background-color: whitesmoke;
+    color: black; 
+}
+
+/* <textarea> - Breite begrenzen und Mindesthöhe definieren */ 
+.kontaktformular textarea {
+    max-width: 25rem; 
+    min-height: 8rem;
+}
+
+/* Button zum Absenden der Formulardaten */
+.kontaktformular button {
+    /* Vererbung von Schriftart und -größe erzwingen */
+    font-size: inherit; 
+    font-family: inherit; 
+
+    /* Beschriftung zentrieren */
+    text-align: center;
+
+    /* Box gestalten */
+    background: #07b;
+    color: white; 
+
+    min-width: 16rem; 
+    padding: 1rem;
+    border: none; 
+    border-radius: 0.25rem;
+    
+    /* Mauszeiger als "Klickhand", wie bei einem Hyperlink */
+    cursor: pointer;
+}
+
+/* Button beim Hovern oder bei Aktivierung per Tastatur farblich hervorheben */
+.kontaktformular button:hover, 
+.kontaktformular button:focus {
+    background: #f63;
+}
+
+
+
+/* eof */

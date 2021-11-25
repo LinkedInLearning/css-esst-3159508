@@ -1,0 +1,77 @@
+/*  ================================ 
+    Webtechniken lernen 2: CSS-Grundlagen 
+    Stylesheet für die Übungswebsite 
+
+    layout.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet zur Gestaltung der Layoutbereiche
+    1. Site-Header 
+    2. Inhaltsbereich (Inhalte in eigenem Stylesheet) 
+    3. Site-Footer 
+
+    Site-Navigation in einem eigenen Stylesheet. 
+
+*/
+
+
+
+/** 
+  * 1. Site-Header 
+  */ 
+ 
+/* Innenabstand für den Kopfbereich */
+.site-header { padding: 1rem 1rem 0 1rem; }
+
+/* Abstand zwischen Logo und Slogan */
+.site-header h1 { margin-bottom: 0; }
+.site-header p  {  margin-top: 0; }
+
+
+
+/** 
+  * 2. Inhaltsbereich (Inhalte in eigenem Stylesheet) 
+  */ 
+
+/* Zeilenhöhe und Abstände für den Inhaltsbereich <main> */
+.site-content { 
+    line-height: 1.5; 
+
+    padding: 0 1rem; 
+    margin-bottom: 3rem; 
+}
+
+
+/** 
+  * 3. Site-Footer 
+  */ 
+
+/* Gestaltung für den Fußbereich (wie Site-Navigation) */
+.site-footer {
+    background-color: #333;
+    color: white; 
+
+    padding: 0.5rem 1rem; 
+    margin: 1rem 0; 
+}  
+
+/* Link "Nach oben" - Schrift etwas kleiner und rechts ausrichten */
+.site-footer {
+    font-size: smaller;
+    text-align: right;
+}
+
+/* Links im Footer (wie Site-Navigation */
+.site-footer a {
+    color: white; 
+    text-decoration: none;
+}
+.site-footer a:hover, 
+.site-footer a:focus {
+    /* border-bottom ist flexibler als text-decoration: underline */    
+    border-bottom: 1px solid white; 
+}
+
+
+
+/* eof */

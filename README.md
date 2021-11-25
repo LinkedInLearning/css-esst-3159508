@@ -15,7 +15,7 @@ Die Übungsdateien bestehen aus insgesamt 11 Ordnern:
 In jedem Kapitelordner gibt es pro Film einen oder zwei Unterordner, die die eigentlichen Übungsdateien enthalten. 
 
 ## Viele Filme haben einen Anfangs- und einen Ende-Ordner 
-Die Kapitelordner haben Unterordner, die nach dem Schema `kapitelnummer_filmnummer` mit den Namen der Filme korrespondieren. So enthält der Unterordner `01_04` die Übungsdateien für den vierten Film im ersten Kapitel.
+Die Kapitelordner haben Unterordner, die nach dem Schema `kapitelnummer_filmnummer` mit den Filmen korrespondieren. So enthält der Unterordner `01_04` die Übungsdateien für den vierten Film im ersten Kapitel.
 
 Für viele Filme gibt es zwei Ordner: 
 

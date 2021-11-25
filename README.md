@@ -1,9 +1,8 @@
 # Webtechniken lernen 2: CSS-Grundlagen
 Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-[![COURSENAME](COURSEIMAGE)](LICOURSEURL)![Building a GraphQL Project with React.js][lil-thumbnail-url] 
+![course-name-alt-text][lil-thumbnail-url] 
 
-[COURSEDESCRIPTION]
 
 ## Die Übungsdateien 
 Die Übungsdateien bestehen aus insgesamt XX Ordnern: 

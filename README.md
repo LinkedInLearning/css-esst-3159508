@@ -1,13 +1,14 @@
 # Webtechniken lernen 2: CSS-Grundlagen
+
 Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
 ![course-name-alt-text][lil-thumbnail-url]
 
 
 ## Die Übungsdateien 
-Die Übungsdateien bestehen aus insgesamt XX Ordnern: 
+Die Übungsdateien bestehen aus insgesamt 11 Ordnern: 
 
-- Die Ordner `kxx` repräsentieren die Kapitel des Kurses.
+- Die Ordner `kxx` repräsentieren die neun Kapitel des Kurses.
 - Der Ordner `lagerhalle` enthält die verwendeten Grafiken. 
 - Der Ordner `lesezeichen` enthält eine HTML-Datei mit Lesezeichen für die im Kurs gezeigten Webseiten. 
 
@@ -35,7 +36,7 @@ Um die Übungsdateien auf Ihrem Computer sinnvoll nutzen zu können benötigen S
 
 Viel Spaß mit dem Kurs und den Übungsdateien! 
 
-### Autor
+## Autor
 
 **Peter Müller **
 

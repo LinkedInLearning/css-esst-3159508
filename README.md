@@ -38,7 +38,7 @@ Viel Spaß mit dem Kurs und den Übungsdateien!
 
 ## Autor
 
-**Peter Müller **
+**Peter Müller**
 
 Autor und Dozent
 

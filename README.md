@@ -8,11 +8,10 @@ Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den ge
 ## Die Übungsdateien 
 Die Übungsdateien bestehen aus insgesamt 11 Ordnern: 
 
-- Die Ordner `kxx` repräsentieren die neun Kapitel des Kurses.
-- Der Ordner `lagerhalle` enthält die verwendeten Grafiken. 
-- Der Ordner `lesezeichen` enthält eine HTML-Datei mit Lesezeichen für die im Kurs gezeigten Webseiten. 
+- Die Ordner `k01` bis `k09` repräsentieren die neun Kapitel des Kurses. In jedem Kapitelordner gibt es pro Film einen oder zwei Unterordner, die die eigentlichen Übungsdateien enthalten. 
+- Der Ordner `lagerhalle` enthält die im Kurs verwendeten Grafiken. 
+- Der Ordner `lesezeichen` enthält eine HTML-Datei mit anklickbaren Lesezeichen für die im Kurs gezeigten Webseiten. 
 
-In jedem Kapitelordner gibt es pro Film einen oder zwei Unterordner, die die eigentlichen Übungsdateien enthalten. 
 
 ## Viele Filme haben einen Anfangs- und einen Ende-Ordner 
 Die Kapitelordner haben Unterordner, die nach dem Schema `kapitelnummer_filmnummer` mit den Filmen korrespondieren. So enthält der Unterordner `01_04` die Übungsdateien für den vierten Film im ersten Kapitel.

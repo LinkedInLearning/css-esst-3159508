@@ -41,6 +41,8 @@ Viel Spaß mit dem Kurs und den Übungsdateien!
 Autor und Dozent
 Website zum Kurs 
 
+[Website zum Kurs](https://html-und-css.de/)
+
 Sehen Sie sich andere Kurse des Autors auf <<<<Link aktualisieren>>>> [LinkedIn Learning](https://www.linkedin.com/learning/instructors/name_des_autors?u=104) an.
 
 [lil-course-url]: https://www.linkedin.com/learning/

@@ -18,10 +18,10 @@ Die Kapitelordner haben Unterordner, die nach dem Schema `kapitelnummer_filmnumm
 
 Für viele Filme gibt es zwei Ordner: 
 
-- einen Anfangs-Ordner, z. B. `01_04a` wie "Anfang"
-- einen Ende-Ordner, z. B. `01_04e` wie "Ende"
+- einen Anfangs-Ordner, z. B. `01_04a`
+- einen Ende-Ordner, z. B. `01_04e` 
 
-Der Ordner `01_04a` enthält die Übungsdateien wie sie am Anfang des Films benötigt werden, der Ordner `01_04e` zeigt die Übungsdateien wie sie am Ende des Films sein sollten. 
+Der Ordner `01_04a` enthält also die Übungsdateien wie sie am Anfang des Films benötigt werden, der Ordner `01_04e` zeigt die Übungsdateien wie sie am Ende des Films sein sollten. 
 
 
 ## Installation 

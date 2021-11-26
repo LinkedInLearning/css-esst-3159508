@@ -38,8 +38,8 @@ Viel Spaß mit dem Kurs und den Übungsdateien!
 
 ## Autor
 **Peter Müller**
+
 Autor und Dozent
-Website zum Kurs 
 
 [Website zum Kurs](https://html-und-css.de/)
 

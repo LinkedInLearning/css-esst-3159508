@@ -1,8 +1,8 @@
 # Webtechniken lernen 2: CSS-Grundlagen
 
-Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
+Dies ist das Repository für den **LinkedIn Learning** Kurs `Webtechniken lernen 2: CSS`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-![course-name-alt-text][lil-thumbnail-url]
+<img src="https://github.com/LinkedInLearning/css-esst-3159508/blob/main/SNSN3159508.jpeg?raw=true" />
 
 In der Kursreihe »Webtechniken lernen« vermittelt Ihnen Peter Müller das gesamte Grundwissen, um moderne Webseiten planen, gestalten, programmieren und dauerhaft pflegen zu können - Sie müssen dazu über keinerlei Vorkenntnisse verfügen. In diesem zweiten Teil steht CSS (Cascading Style Sheets) im Mittelpunkt: Sehen und lernen Sie in vielen praktischen Übungen die wichtigsten CSS-Konzepte umzusetzen und HTML-Elemente zu erstellen und zu gestalten. Anhand von Code-Challenges am Ende eines Kapitels können Sie das Erlernte sofort testen und Ihre Lösung mit der angebotenen »Solution« vergleichen.
 

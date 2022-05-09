@@ -4,6 +4,7 @@ Dies ist das Repository für den **LinkedIn Learning** Kurs [COURSENAME]. Den ge
 
 ![course-name-alt-text][lil-thumbnail-url]
 
+In der Kursreihe »Webtechniken lernen« vermittelt Ihnen Peter Müller das gesamte Grundwissen, um moderne Webseiten planen, gestalten, programmieren und dauerhaft pflegen zu können - Sie müssen dazu über keinerlei Vorkenntnisse verfügen. In diesem zweiten Teil steht CSS (Cascading Style Sheets) im Mittelpunkt: Sehen und lernen Sie in vielen praktischen Übungen die wichtigsten CSS-Konzepte umzusetzen und HTML-Elemente zu erstellen und zu gestalten. Anhand von Code-Challenges am Ende eines Kapitels können Sie das Erlernte sofort testen und Ihre Lösung mit der angebotenen »Solution« vergleichen.
 
 ## Die Übungsdateien 
 Die Übungsdateien bestehen aus insgesamt 11 Ordnern: 
@@ -38,9 +39,9 @@ Viel Spaß mit dem Kurs und den Übungsdateien!
 ## Autor
 **Peter Müller**
 
-[Website zum Kurs](https://html-und-css.de/)
+[Ergänzende Website des Autors zum Kurs](https://html-und-css.de/)
 
-Sehen Sie sich andere Kurse des Autors auf <<<<Link aktualisieren>>>> [LinkedIn Learning](https://www.linkedin.com/learning/instructors/name_des_autors?u=104) an.
+Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/peter-m-muller) an.
 
-[lil-course-url]: https://www.linkedin.com/learning/
+[lil-course-url]: https://www.linkedin.com/learning/webtechniken-lernen-2-css-grundlagen-17200653
 [lil-thumbnail-url]: https://
